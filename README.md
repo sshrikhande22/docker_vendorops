@@ -12,6 +12,9 @@ ng serve --open
 
 link for localhost: http://localhost:4200/
 
-Docker Commands 
-1. docker build -t vendoroct-image .
-2. docker run -d -p 8080:80 --name vendoroct-app vendoroct-image
+Docker Commands
+
+1. docker build -t vendoroct-image . # create the image
+2. docker run -d -p 8080:80 --name vendoroct-app vendoroct-image #running the image
+3. docker ps #Find the ID or name of your running container
+4. docker rm -f vendoroct-app #stop and remove the running container
