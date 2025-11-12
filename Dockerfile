@@ -21,7 +21,7 @@ FROM nginx:alpine
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # 2. Copy the built Angular files (Use the correct path you found earlier)
-COPY --from=BUILD /app/dist/vendoroct /usr/share/nginx/html 
+COPY --from=BUILD /app/dist/vendoroct/browser /usr/share/nginx/html 
 
 # Nginx runs on port 80 by default
 EXPOSE 80
